@@ -2,37 +2,89 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: #698996;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+
+  font-family: 'Red Rose', cursive;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  display: grid;
+  width: 30vw;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4px;
+}
+
+input {
+  padding: 2px;
+  font-family: 'Red Rose', cursive;
+  padding-left: 4px;
+}
+
+optgroup {
+  font-family: 'Red Rose', cursive;
+}
+
+option {
+  padding-left: 8px;
+}
+
+.form .button-container {
+  grid-column: 1/3;
+  margin-top: 12px;
+}
+
+label {
+  background-color: #EBBAB9;
+}
+
+
+button {
+  background-color: #407076;
+  border: none;
+  border-radius: 5px;
+  color: #EBBAB9;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 1.0rem;
+  font-family: 'Red Rose', cursive;
+  text-shadow: EBBAB9 1px 1px;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #97B1A6;
+  color: bisque;
+  text-shadow: none;
+}
+
+.progression {
+  margin-top: 20px;
+  background-color: #EBBAB9;
+}
+
+.chords-container {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.chord {
+  font-size: 40px;
+  margin: 8px;
 }
